@@ -3,12 +3,12 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Варианты отелей</title>
 </head>
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a href="#" class="mai-header-logo">
+            <a class="main-header-logo" href="#">
                 <img src="#" alt="логотип Седона">
             </a>
             <ul class="site-navigation">
@@ -20,19 +20,19 @@
         </nav>
     </header>
     <main class="container">
-        <section class="ap-search">
+        <section class="place-search">
             <h2 class="visually-hidden">поиск жилья</h2>
             <div class="search-tool">
                 <h3>ИНФРАСТРУКТУРА:</h3>
                 <ul class="search-list">
                     <li class="search-item">
-                        <label><input type="checkbox" name="pool"> БАССЕЙН</label>
+                        <label><input name="pool" type="checkbox"> БАССЕЙН</label>
                     </li>
                     <li class="search-item">
-                        <label><input type="checkbox" name="parkplace"> ПАРКОВКА</label>
+                        <label><input name="parkplace" type="checkbox"> ПАРКОВКА</label>
                     </li>
                     <li class="search-item">
-                        <label><input type="checkbox" name="wifi"> WI-FI</label>
+                        <label><input name="wifi" type="checkbox"> WI-FI</label>
                     </li>
                 </ul>
             </div>
@@ -40,13 +40,13 @@
                 <h3>ТИП ЖИЛЬЯ:</h3>
                 <ul class="search-list">
                     <li class="search-item">
-                        <label><input type="checkbox" name="hotel"> ГОСТИНИЦА</label>
+                        <label><input name="hotel" type="checkbox"> ГОСТИНИЦА</label>
                     </li>
                     <li class="search-item">
-                        <label><input type="checkbox" name="motel"> МОТЕЛЬ</label>
+                        <label><input name="motel" type="checkbox"> МОТЕЛЬ</label>
                     </li>
                     <li class="search-item">
-                        <label><input type="checkbox" name="apartments"> АПАРТАМЕНТЫ</label>
+                        <label><input name="apartments" type="checkbox"> АПАРТАМЕНТЫ</label>
                     </li>
                 </ul>
             </div>
@@ -55,7 +55,7 @@
                 <ul class="money-part">
                     <li class="money-item">от 0 до 3000</li>
                     <li class="money-item"><span class="input"></span></li>
-                    <li class="money-item"><input type="submit" name="show" value="ПОКАЗАТЬ"></li>
+                    <li class="money-item"><input name="show" type="submit" value="ПОКАЗАТЬ"></li>
                 </ul>
             </div>
 </section>
@@ -63,41 +63,58 @@
             <p><b>НАЙДЕНО: 3</b></p>
             <p>СОРТИРОВКА:</p>
             <ul class="result-tool">
-                <li class="btn">ПО ЦЕНЕ</li>
-                <li class="btn">ПО ТИПУ</li>
-                <li class="btn">ПО РЕЙТИНГУ</li>
-                <li class="btn-t"><input type="radio" value="up" name="t-btn"></li>
-                <li class="btn-t"><input type="radio" value="down" name="t-btn"></li>
+                <li class="btn"><a class="result-link">ПО ЦЕНЕ</a></li>
+                <li class="btn"><a class="result-link">ПО ТИПУ</a></li>
+                <li class="btn"><a class="result-link">ПО РЕЙТИНГУ</a></li>
+                <li class="btn"><a class="triangle up"></a></li>
+                <li class="btn"><a class="triangle down"></a></li>
             </ul>
             <h2 class="visually-hidden">результаты</h2>
             <ul class="showed-res">
                 <li class="showed-item">
-                    <a class="img-link" href="#"><img scr="#" class="showed-img" alt="Amara Resort"></a>
+                    <a class="img-link" href="#"><img class="showed-img" scr="#" alt="Amara Resort"></a>
                     <a class="place-link" href="#"><p><b>AMARA RESORT & SPA</b></p></a>
                     <p>ГОСТИНИЦА ОТ 4000 Р.</p>
                     <a class="button" href="#">ПОДРОБНЕЕ</a>
                     <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+                    <div class="rating">
+                        <p>рейтинг: 8,5</p>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
                 </li>
                 <li class="showed-item">
-                    <a class="img-link" href="#"><img scr="#" class="showed-img" alt="Desert Quail"></a>
+                    <a class="img-link" href="#"><img class="showed-img" scr="#" alt="Desert Quail"></a>
                     <a class="place-link" href="#"><p><b>DESERT QUAIL INN</b></p></a>
                     <p>МОТЕЛЬ ОТ 3000 Р.</p>
                     <a class="button" href="#">ПОДРОБНЕЕ</a>
                     <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+                    <div class="rating">
+                        <p>рейтинг: 8,9</p>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
                 </li>
                 <li class="showed-item">
-                    <a class="img-link" href="#"><img scr="#" class="showed-img" alt="Diablo"></a>
+                    <a class="img-link" href="#"><img class="showed-img" scr="#" alt="Diablo"></a>
                     <a class="place-link" href="#"><p><b>VILLAS AT POCO DIABLO</b></p></a>
                     <p>АПАРТАМЕНТЫ ОТ 2000 Р.</p>
                     <a class="button" href="#">ПОДРОБНЕЕ</a>
                     <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+                    <div class="rating">
+                        <p>рейтинг: 9,2</p>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
                 </li>
             </ul>
-
-        </section>
+          </section>
     </main>
     <footer class="main-footer">
-        <span class="footer-tag">#VISITSEDONA</span>
+        <div class="footer-tag">#VISITSEDONA</div>
         <div class="footer-social">
             <ul>
                 <li><a class="social-button" href="#">Твиттер</a></li>
@@ -107,7 +124,7 @@
         </div>
         <div class="footer-copyright">
             <p class="footer-copyright">WEBSITE BY</p>
-            <a class="button" href="#"><img src="#" class="htmlacademy-logo" alt="html-logo"></a>
+            <a class="button" href="#"><img class="htmlacademy-logo" src="#" alt="html-logo"></a>
         </div>
     </footer>
 
