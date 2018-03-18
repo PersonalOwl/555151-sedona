@@ -7,11 +7,9 @@
 <body class="container">
   <header class="main-header">
     <nav class="main-navigation">
-      <div class="header-logo">
-        <a class="main-header-logo" href="#">
-          <img src="img/logo.png" alt="логотип Седона">
-        </a>
-      </div>
+      <a class="main-header-logo" href="#">
+        <img max-width="100%" src="img/logo.png" alt="логотип Седона">
+      </a>
       <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -19,6 +17,9 @@
         <li><a href="#">Гостиницы</a></li>
       </ul>
     </nav>
+    <div class="header-background">
+      <img max-width="100%" src="img/mountain-background.jpg" alt="Горы Седоны">
+    </div>
   </header>
   <main class="main-content">
 
@@ -33,7 +34,7 @@
           <p class="numbers">-№1-</p>
           <p>Седона - не аттракцион для туристов,там течет своя жизнь</p>
           <div class="feature-img">
-            <img src="img/house.jpg" alt="Домик в Седоне">
+            <img src="img/house.jpg" max-width="100%" alt="Домик в Седоне">
           </div>
           <ul class="item-list">
             <li class="items">
@@ -53,7 +54,7 @@
         <li class="feature-item">
           <h3>Там есть Мост Дьявола</h3>
           <div class="feature-img">
-            <img src="img/bridge.jpg" alt="Мост Дьявола">
+            <img src="img/bridge.jpg" max-width="100%" alt="Мост Дьявола">
           </div>
           <p class="numbers">-№2-</p>
           <p>Да,по нему можно пройти! если конечно Вы осмелитесь</p>
@@ -75,37 +76,38 @@
         </li>
       </ul>
     </section>
+
     <section>
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
       <a class="button" href="#">Поиск гостиницы в Седоне</a>
       <div class="map">
-        <img src="img/map.jpg" alt="Карта штата">
+        <img src="img/map.jpg" max-width="100%" alt="Карта штата">
       </div>
     </section>
   </main>
+
   <footer class="main-footer">
     <div class="footer-tag">#VISITSEDONA</div>
     <div class="footer-social">
       <ul>
         <li class="social-img">
-          <a class="social-button" href="#"><img class="social-link" src="img/twitter.svg" alt="Твиттер"></a>
+          <a class="social-button" href="#"><svg max-width="100%" aria-label="твиттер"><use xlink=url("img/twitter.svg")></use></svg></a>
         </li>
         <li class="social-img">
-          <a class="social-button" href="#"><img class="social-link" src="img/fb-icon.svg" alt="Фейсбук"></a>
+          <a class="social-button" href="#"><svg max-width="100%" aria-label="фейсбук"><use xlink=url("img/fb-icon.svg")></use></svg></a>
         </li>
         <li class="social-img">
-          <a class="social-button" href="#"><img class="social-link" src="img/youtube.svg" alt="Ютьюб"></a>
+          <a class="social-button" href="#"><svg max-width="100%" aria-label="ютьюб"><use xlink=url("img/youtube.svg")></use></svg></a>
         </li>
       </ul>
     </div>
     <div class="footer-copyright">
       <p class="footer-copyright">Website by</p>
-      <div class="academy-logo">
-        <a class="button" href="#"><img class="htmlacademy-logo" src="#" alt="html-logo"></a>
-      </div>
+      <a class="button" href="#"><img class="htmlacademy-logo" max-width="100%" src="#" alt="html-logo"></a>
     </div>
   </footer>
+
   <section class="modal modal-search">
     <h2 class="visually-hidden">Поиск мотеля в Седоне</h2>
     <form>
@@ -114,7 +116,7 @@
           <label for="in-date">Дата заезда:</label>
           <input name="reserve-item" id="in-date" type="text">
           <button class="calendar-button" type="button">
-            <img class="calendar-icon" src="img/calendar.svg" alt="календарь">
+            <svg class="calendar" max-width="100%"><use xlink=url("img/calendar.svg")></use></svg>
             <span class="visually-hidden">календарь</span>
           </button>
         </div>
@@ -122,36 +124,36 @@
           <label for="out-date">Дата выезда:</label>
           <input name="reserve-item" id="out-date" type="text">
           <button class="calendar-button" type="button">
-            <img class="calendar-icon" src="img/calendar.svg" alt="календарь">
+            <svg class="calendar" max-width="100%"><use xlink=url("img/calendar.svg")></use></svg>
             <span class="visually-hidden">календарь</span>
           </button>
         </div>
         <div>
           <label for="adults">Взрослые:</label>
           <button class="reserve-button" type="button">
-            <img class="reserve-img" src="img/minus.svg" alt="Плюс один">
+            <svg class="plus-minus" max-width="100%"><use xlink=url("img/plus.svg")></use></svg>
             <span class="visually-hidden">плюс</span>
           </button>
           <input name="reserve-item" id="adults" type="text">
           <button class="reserve-button" type="button">
-            <img class="reserve-img" src="img/plus.svg" alt="Минус один">
+            <svg class="plus-minus" max-width="100%"><use xlink=url("img/minus.svg")></use></svg>
             <span class="visually-hidden">минус</span>
           </button>
         </div>
         <div>
           <label for="children">Дети:</label>
           <button class="reserve-button" type="button">
-            <img class="reserve-img" src="img/minus.svg" alt="Плюс один">
+            <svg class="plus-minus" max-width="100%"><use xlink=url("img/plus.svg")></use></svg>
             <span class="visually-hidden">плюс</span>
           </button>
           <input name="reserve-item" id="children" type="text">
           <button class="reserve-button" type="button">
-            <img class="reserve-img" src="img/plus.svg" alt="Минус один">
+            <svg class="plus-minus" max-width="100%"><use xlink=url("img/minus.svg")></use></svg>
             <span class="visually-hidden">минус</span>
           </button>
         </div>
         <div>
-          <input name="reserve-item" type="submit" value="Найти" aria-label="Найти жильё">
+          <input name="reserve-item" type="submit" value="Найти">
         </div>
       </div>
     </form>

@@ -8,11 +8,9 @@
 <body class="container">
   <header class="main-header">
     <nav class="main-navigation">
-      <div class="header-logo">
-        <a class="main-header-logo" href="#">
-          <img src="img/logo.png" alt="логотип Седона">
-        </a>
-      </div>
+      <a class="main-header-logo" href="#">
+        <img max-width="100%" src="img/logo.png" alt="логотип Седона">
+      </a>
       <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -21,22 +19,23 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+
+  <main>
     <section class="place-search">
       <h2 class="visually-hidden">поиск жилья</h2>
       <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="search">
           <legend class="search-name">Инфраструктура:</legend>
-          <ul class="infrastructure">
-            <li class="search-item">
+          <ul class="search-list">
+            <li class="list-item">
               <input name="infrastructure-item" id="pool" type="checkbox" checked>
               <label for="pool">Бассейн</label>
             </li>
-            <li class="search-item">
+            <li class="list-item">
               <input name="infrastructure-item" id="parking" type="checkbox">
               <label for="parking">Парковка</label>
             </li>
-            <li class="search-item">
+            <li class="list-item">
               <input name="infrastructure-item" id="wi-fi" type="checkbox">
               <label for="wi-fi">Wi-Fi</label>
             </li>
@@ -44,16 +43,16 @@
         </fieldset>
         <fieldset class="search">
           <legend class="search-name">Тип жилья:</legend>
-          <ul class="apartment-type">
-            <li class="search-item">
+          <ul class="search-list">
+            <li class="list-item">
               <input name="apartment-item" id="hostel" type="checkbox" checked>
               <label for="hostel">Гостиница</label>
             </li>
-            <li class="search-item">
+            <li class="list-item">
               <input name="apartment-item" id="motel" type="checkbox" checked>
               <label for="motel">Отель</label>
             </li>
-            <li class="search-item">
+            <li class="list-item">
               <input name="apartment-item" id="apartments" type="checkbox" checked>
               <label for="apartments">Апартаменты</label>
             </li>
@@ -61,21 +60,20 @@
         </fieldset>
         <fieldset class="search">
           <legend class="search-name">Стоимость в сутки(Р):</legend>
-          <ul class="money-part">
-            <li class="money-item">
-              <output name="money-result" aria-label="Стоимость от">От 0</output>
-              <output name="money-result" aria-label="Стоимость до">До 3000</output>
-            </li>
-            <li class="money-item">
-              <input name="money-enter" type="range" min="0" max="5000" step="100" aria-label="Значение стоимости">
-            </li>
-            <li class="money-item">
-              <button class="search-result" type="submit">Показать</button>
-            </li>
-          </ul>
+          <div class="money-item">
+            <output name="money-result" aria-label="Стоимость от">От 0</output>
+            <output name="money-result" aria-label="Стоимость до">До 3000</output>
+          </div>
+          <div class="money-item">
+            <input name="money-enter" type="range" min="0" max="5000" step="100" aria-label="Значение стоимости">
+          </div>
+          <div class="money-item">
+            <button class="search-result" type="submit">Показать</button>
+          </div>
         </fieldset>
       </form>
     </section>
+
     <section class="results">
       <p><b>Найдено: 3</b></p>
       <p>Сортировка:</p>
@@ -93,12 +91,12 @@
       <ul class="triangle-tool">
         <li class="triangle-button">
           <a class="triangle up" href="#">
-            <img class="button-up" src="img/icon-up-dir.svg" alt="по возрастанию">
+            <svg class="triangles" max-width="100%" aria-label="по возрастанию"><use xlink=url("img/icon-up-dir.svg")></use></svg>
           </a>
         </li>
         <li class="triangle-button">
           <a class="triangle down" href="#">
-            <img class="button-down" src="img/icon-down-dir.svg" alt="по убыванию">
+            <svg class="triangles" max-width="100%" aria-label="по убыванию"><use xlink=url("img/icon-down-dir.svg")></use></svg>
           </a>
         </li>
       </ul>
@@ -107,7 +105,7 @@
         <li class="showed-item">
           <div class="showed-img">
             <a class="img-link" href="#">
-              <img class="place-img" src="img/amara.jpg" alt="Amara Resort and Spa">
+              <img class="place-img" max-width="100%" src="img/amara.jpg" alt="Amara Resort and Spa">
             </a>
           </div>
           <a class="place-link" href="#"><h3>Amara Resort & Spa</h3></a>
@@ -116,25 +114,18 @@
           <p>от 4000 р.</p>
           <a class="button" href="#">Забронировать</a>
           <div class="stars">
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
+            <span class="visually-hidden" aria-label="четыре звезды"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
           </div>
           <p>рейтинг: 8,5</p>
         </li>
         <li class="showed-item">
           <div class="showed-img">
             <a class="img-link" href="#">
-              <img class="place-img" src="img/quail.jpg" alt="Desert Quail Inn">
+              <img class="place-img" max-width="100%" src="img/quail.jpg" alt="Desert Quail Inn">
             </a>
           </div>
           <a class="place-link" href="#"><h3>Desert Quail Inn</h3></a>
@@ -143,22 +134,17 @@
           <p>от 3000 р.</p>
           <a class="button" href="#">Забронировать</a>
           <div class="stars">
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
+            <span class="visually-hidden" aria-label="три звезды"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
           </div>
           <p>рейтинг: 8,9</p>
         </li>
         <li class="showed-item">
           <div class="showed-img">
             <a class="img-link" href="#">
-              <img class="place-img" src="img/diablo.jpg" alt="Villas At Poco Diablo">
+              <img class="place-img" max-width="100%" src="img/diablo.jpg" alt="Villas At Poco Diablo">
             </a>
           </div>
           <a class="place-link" href="#"><h3>Villas At Poco Diablo</h3></a>
@@ -167,18 +153,16 @@
           <p>от 2000 р.</p>
           <a class="button" href="#">Забронировать</a>
           <div class="stars">
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
-            <span class="star">
-              <img class="star-image" src="img/star.svg" alt="Звёздочка">
-            </span>
+            <span class="visually-hidden" aria-label="две звезды"></span>
+            <span class="star"></span>
+            <span class="star"></span>
           </div>
           <p>рейтинг: 9,2</p>
         </li>
       </ul>
     </section>
   </main>
+
   <footer class="main-footer">
     <div class="footer-tag">
       #VisitSedona
@@ -186,23 +170,21 @@
     <div class="footer-social">
       <ul>
         <li class="social-img">
-          <a class="social-button" href="#"><img class="social-link" src="img/twitter.svg" alt="Твиттер"></a>
+          <a class="social-button" href="#"><svg max-width="100%" aria-label="твиттер"><use xlink=url("img/twitter.svg")></use></svg></a>
         </li>
         <li class="social-img">
-          <a class="social-button" href="#"><img class="social-link" src="img/fb-icon.svg" alt="Фейсбук"></a>
+          <a class="social-button" href="#"><svg max-width="100%" aria-label="фейсбук"><use xlink=url("img/fb-icon.svg")></use></svg></a>
         </li>
         <li class="social-img">
-          <a class="social-button" href="#"><img class="social-link" src="img/youtube.svg" alt="Ютьюб"></a>
+          <a class="social-button" href="#"><svg max-width="100%" aria-label="ютьюб"><use xlink=url("img/youtube.svg")></use></svg></a>
         </li>
       </ul>
     </div>
     <div class="footer-copyright">
       <p class="footer-copyright">Website by</p>
-      <div class="academy-logo">
-        <a class="button" href="#">
-          <img class="htmlacademy-logo" src="#" alt="html-logo">
-        </a>
-      </div>
+      <a class="button" href="#">
+        <img class="htmlacademy-logo" max-width="100%" src="#" alt="html-logo">
+      </a>
     </div>
   </footer>
 </body>
