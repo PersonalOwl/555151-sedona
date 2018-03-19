@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="container">
   <header class="main-header">
@@ -25,10 +25,10 @@
     <img width="1200" height="565" src="img/mountain-background.jpg" alt="Горы Седоны">
   </div>
   <main class="main-content">
+    <h1 class="visually-hidden">Город Седона</h1>
 
     <section class="features">
-      <h1 class="visually-hidden">Город Седона</h1>
-      <p><b>Седона - небольшой городок в аризоне,заслуживающий большего!</b></p>
+      <p class="titles">Седона - небольшой городок в аризоне,заслуживающий большего!</p>
       <p>Рассмотрим 5 причин,по которым Седона круче,чем Гранд Каньон!</p>
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
@@ -36,20 +36,6 @@
           <h3>Настоящий городок</h3>
           <p class="numbers">-№1-</p>
           <p>Седона - не аттракцион для туристов,там течет своя жизнь</p>
-          <ul class="item-list">
-            <li class="items">
-              <h4>Жильё</h4>
-              <p>Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
-            </li>
-            <li class="items">
-              <h4>Еда</h4>
-              <p>Всегда заказывайте фирменный бургер,Вы не разочаруетесь!</p>
-            </li>
-            <li class="items">
-              <h4>Сувениры</h4>
-              <p>Не только китайского,но и местного производства!</p>
-            </li>
-          </ul>
         </li>
         <li class="feature-item">
           <h3>Там есть Мост Дьявола</h3>
@@ -72,12 +58,26 @@
           <p>большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
+      <ul class="item-list">
+        <li class="items">
+          <h4>Жильё</h4>
+          <p>Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+        </li>
+        <li class="items">
+          <h4>Еда</h4>
+          <p>Всегда заказывайте фирменный бургер,Вы не разочаруетесь!</p>
+        </li>
+        <li class="items">
+          <h4>Сувениры</h4>
+          <p>Не только китайского,но и местного производства!</p>
+        </li>
+      </ul>
     </section>
 
     <section class="modal-search">
-      <h2>Заинтересовались?</h2>
+      <h2 class="only-one">Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-      <a class="button" href="#">Поиск гостиницы в Седоне</a>
+      <a class="button search" href="#">Поиск гостиницы в Седоне</a>
       <div class="reserve-form">
         <form>
           <div>
@@ -148,7 +148,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="footer-tag">#VISITSEDONA</div>
+    <span class="footer-tag">#VISITSEDONA</span>
     <div class="footer-social">
       <ul class="social-list">
         <li class="social-img">

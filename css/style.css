@@ -1,0 +1,193 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.site-navigation,
+.features-list,
+.item-list,
+.social-list,
+.search-list,
+.result-tool,
+.triangle-tool,
+.showed-results {
+  list-style: none;
+}
+
+.site-navigation a,
+.result-tool a,
+.showed-item a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.feature-item h3,
+.feature-item h4  {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.titles {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.only-one {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.social-img {
+  background-color: #81b3d2;
+}
+
+.feature-item:nth-child(n+1):nth-child(-n+2) {
+  background-color: #81b3d2;
+}
+
+.footer-tag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.feature-item:nth-child(n+3):nth-child(-n+5) {
+  background-color: #eeeeee;
+}
+
+.results {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.result-button a {
+  color: #000000;
+  opacity: 0.3;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.result-button a:hover {
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.result-button a:active {
+  color: #000000;
+  border: none;
+}
+
+.results h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.triangle-button a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.triangle-button a:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+.triangle-button a:active {
+  color: #81b3d2;
+}
+
+.results a h3:hover {
+  color: #81b3d2;
+}
+
+.results a h3:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.reserve-form {
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.showed-item {
+  border: 1px solid #e5e5e5;
+}
+
+a.button {
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  border: none;
+}
+
+a.button.info {
+  background-color: #81b3d2;
+}
+
+a.button.booking {
+  background-color: #766357;
+}
+
+.button.booking,
+.button.info {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.button.info:hover {
+  background-color: #669ec0;
+}
+
+.button.booking:hover {
+  background-color: #604e43;
+}
+
+.button.info:active {
+  background-color: #5496bd;
+  opacity: 0.3;
+}
+
+.button.booking:active {
+  background-color: #503e33;
+  opacity: 0.3;
+}
