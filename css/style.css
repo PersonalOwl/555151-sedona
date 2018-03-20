@@ -141,7 +141,7 @@ a {
   opacity: 0.3;
 }
 
-.reserve-form {
+.modal-search {
   color: #000000;
   font-size: 14px;
   line-height: 26px;
@@ -184,10 +184,78 @@ a.button.booking {
 
 .button.info:active {
   background-color: #5496bd;
-  opacity: 0.3;
+  color: rgba(255,255,255,0.3);
 }
 
 .button.booking:active {
   background-color: #503e33;
+  color: rgba(255,255,255,0.3);
+}
+
+#Layer_1 {
+  width: 115px;
+  height: 40px;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+  color: rgba(255,255,255,0.3);
+}
+
+.modal-search input:not(:last-child) {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.modal-search input:not(:last-child):hover {
+  background-color: #ebebeb;
+  border:  1px solid #ebebeb;
+}
+
+.modal-search input:not(:last-child):focus {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.search-form fieldset {
+  border: none;
+}
+
+.search-form legend {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.search-form ul {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.search-input:disabled + legend {
   opacity: 0.3;
+}
+
+.rating {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.search-result {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.search-result:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
 }
