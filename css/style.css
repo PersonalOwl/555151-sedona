@@ -67,10 +67,6 @@ a {
   font-weight: bold;
 }
 
-.social-img {
-  background-color: #81b3d2;
-}
-
 .feature-item:nth-child(n+1):nth-child(-n+2) {
   background-color: #81b3d2;
 }
@@ -100,12 +96,12 @@ a {
 .result-button a {
   color: #000000;
   opacity: 0.3;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .result-button a:hover {
   color: #81b3d2;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .result-button a:active {
@@ -119,17 +115,18 @@ a {
 }
 
 .triangle-button a {
-  color: #000000;
+  fill: #000000;
   opacity: 0.3;
 }
 
 .triangle-button a:hover {
-  color: #000000;
+  fill: #000000;
   opacity: 1;
 }
 
 .triangle-button a:active {
-  color: #81b3d2;
+  fill: #81b3d2;
+  opacity: 1
 }
 
 .results a h3:hover {
@@ -192,18 +189,28 @@ a.button.booking {
   color: rgba(255,255,255,0.3);
 }
 
-#Layer_1 {
-  width: 115px;
-  height: 40px;
+.social-img {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
 }
 
-.social-button:hover {
+.social-img:hover {
   background-color: #669ec0;
 }
 
-.social-button:active {
+.social-img:active {
   background-color: #5496bd;
-  color: rgba(255,255,255,0.3);
+}
+
+.social-img svg {
+  background-size: 46px 48px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.social-img svg:active {
+  opacity: 0.3;
 }
 
 .modal-search input:not(:last-child) {
@@ -258,4 +265,18 @@ a.button.booking {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #ffffff;
+}
+
+.place-search {
+  width: 1200px;
+  height: 217px;
+  background-color: #ffffff;
+  background-image: url(../img/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1200px 217px;
+}
+
+.visually-hidden {
+  display: none;
 }
