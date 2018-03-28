@@ -1,0 +1,51 @@
+﻿body {
+  border: solid 1px red;
+}
+
+ul {
+  background-color: green;
+}
+
+
+
+
+
+
+nav {
+  background-color: pink;
+}
+
+section {
+  border: solid 1px brown;
+}
+
+.main-header-logo {
+  background-color: yellow;
+}
+
+.site-navigation {
+  background-color: mediumpurple;
+}
+
+
+}
+
+div {
+  background-color: #0094ff;
+}
+
+main {
+  border: solid 1px #ff006e;
+}
+
+footer {
+  border: solid 1px #ff006e;
+}
+
+header {
+  border: solid 1px green;
+}
+
+html {
+  background-color: transparent;
+}
