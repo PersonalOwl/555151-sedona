@@ -28,15 +28,13 @@ section {
 }
 
 
-}
+
 
 div {
-  background-color: #0094ff;
+  background-color:;
 }
 
-main {
-  border: solid 1px #ff006e;
-}
+
 
 footer {
   border: solid 1px #ff006e;
@@ -48,4 +46,9 @@ header {
 
 html {
   background-color: transparent;
+  border: 1px solid black;
+}
+
+.main-content {
+  background-color: green;
 }

@@ -1,14 +1,15 @@
 ﻿html {
-  width: 100%;
+  width: 1280px;
+  
 }
 
 body {
-  
-  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 1200px;
   height: 2765px;
-  margin-left: 3%;
-  margin-right: 3%;
-  padding: 1px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -287,15 +288,15 @@ a.button.booking {
 }
 
 .main-header {
-  margin-bottom: 75px;
-  min-height: 70px;
+  margin-bottom: 0;
+  min-height: 60px;
 }
 
 .main-navigation {
   
   width: 100%;
-  margin: 1px;
-  min-height: 70px;
+  padding: 0;
+  min-height: 60px;
   background-color: transparent;
   font-size: 14px;
   line-height: 26px;
@@ -304,23 +305,25 @@ a.button.booking {
 }
 
 .main-header-logo img {
+  width: 138px;
+  display: block;
+  position: absolute;
+
+  left: 50%;
   
-  order: 2; 
-  width: 140px;
-  height: 70px;
-  background-color: aqua;
-  background-size: 140px 70px;
- 
+  top: 0;
+  margin-left: -26px;
 }
 
 .site-navigation {
-  
-  margin: 1px;
+  font-size: 0;
+  padding-left: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
   
   width: 100%;
   min-height: 60px;
@@ -329,9 +332,66 @@ a.button.booking {
 }
 
  .site-navigation li {
-    
+    vertical-align: middle;
     background-color: aliceblue;
-    width: 239px;
+    width: 240px;
     height: 60px;
+    text-align: center;
+    font-size: 14px;
  }
 
+ .site-navigation li:nth-child(2) {
+   margin-right: 240px;
+ }
+
+ .site-navigation li a {
+   text-decoration: none;
+   font-size: 14px;
+   width: 100%;
+   padding: 22px 0 24px;
+   display: inline-block;
+ }
+
+ .header-background {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   
+ }
+
+ .header-background img {
+   width: 100%;
+   height: 100%;
+ }
+
+ .main-content {
+   height: 2075px;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+ }
+
+ .titles {
+   height: 215px;
+   width: 100%;
+   background-color: #ffffff;
+   
+   display: block;
+   margin: 0;
+   padding: 0;
+ }
+
+ .titles p:nth-child(1) {
+   line-height: 26px;
+   font-size: 21px;
+   margin-top: 60px;
+   
+ }
+
+ .titles p:nth-child(2) {
+   line-height: 26px;
+   font-size: 14px;
+   font-weight: normal;
+   margin-top: 40px;
+   margin-bottom: 60px;
+ }
