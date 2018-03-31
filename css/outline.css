@@ -3,7 +3,7 @@
 }
 
 ul {
-  background-color: green;
+  
 }
 
 
@@ -12,19 +12,19 @@ ul {
 
 
 nav {
-  background-color: pink;
+  
 }
 
 section {
-  border: solid 1px brown;
+  
 }
 
-.main-header-logo {
+.features-list {
   background-color: yellow;
 }
 
-.site-navigation {
-  background-color: mediumpurple;
+.feature-item {
+  background-color: blue;
 }
 
 
@@ -36,19 +36,13 @@ div {
 
 
 
-footer {
+.footer {
   border: solid 1px #ff006e;
 }
 
 header {
-  border: solid 1px green;
+  
 }
 
-html {
-  background-color: transparent;
-  border: 1px solid black;
-}
 
-.main-content {
-  background-color: green;
-}
+
