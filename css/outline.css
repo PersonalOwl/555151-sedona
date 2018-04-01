@@ -1,5 +1,5 @@
 ﻿body {
-  border: solid 1px red;
+  outline: solid 1px red;
 }
 
 ul {
@@ -20,11 +20,11 @@ section {
 }
 
 .features-list {
-  background-color: yellow;
+  
 }
 
 .feature-item {
-  background-color: blue;
+  
 }
 
 
